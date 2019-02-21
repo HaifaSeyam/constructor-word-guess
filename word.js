@@ -2,7 +2,6 @@ var Letter = require("./letter");
 
 function Word(word) {
     this.lettersArr = word.split("").map(letter => {return new Letter(letter)});
-    console.log(this.lettersArr);
 
     this.displayGuesses = function () {
         var guesses = "";

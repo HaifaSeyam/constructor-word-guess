@@ -13,7 +13,7 @@ function Word(word) {
     };
     this.updateGuessedLetterArr = function (inputChar) {
         for (var i = 0 ; i < this.lettersArr.length ; i++) {
-            this.lettersArr[i].guessedLetter(inputChar);
+            this.lettersArr[i].checkGuessed(inputChar);
         }
     }
 }

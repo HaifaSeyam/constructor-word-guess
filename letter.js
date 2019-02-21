@@ -5,9 +5,9 @@ function Letter(char) {
 
     this.displayGuessed = function() {
         if (this.guessed) {
-            return this.char;
+            return this.char + " ";
         } else {
-            return ("_");
+            return ("_ ");
         }
     };
     this.checkGuessed = function (guessedChar) {
